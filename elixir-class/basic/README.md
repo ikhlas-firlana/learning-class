@@ -33,7 +33,7 @@ true
 false
 ```
 ### Atoms
-An atom is a constant whose name is its value. it think similiar with ENUM
+An atom is a constant whose name is its value. it think similiar with ENUM in Java
 ```
 :foo
 :foo == :bar
