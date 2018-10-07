@@ -25,4 +25,4 @@ or `start-installation.sh`
 learn step2 using.
 
 ## References
-[elixir school](https://elixirschool.com/en/lessons/)
+[elixir school](https://elixirschool.com/en/)
