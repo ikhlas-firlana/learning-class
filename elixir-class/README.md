@@ -23,3 +23,6 @@ or `start-installation.sh`
 - basic 
 
 learn step2 using.
+
+## References
+[elixir school](https://elixirschool.com/en/lessons/)
