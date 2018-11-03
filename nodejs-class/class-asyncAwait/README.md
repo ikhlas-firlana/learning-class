@@ -26,6 +26,19 @@ one()
         console.log(y);
     }); // <= this way is method chaining 
 ```
+
+there are some case if its recognize as promise. with returning function `Promise.resolve(...)`
+
+```
+new Promise((resolve, reject) => {
+    console.log("HELLO WORLD!")
+    return Promise.resolve(1)
+})
+.then((i) => {
+    console.log("inside i is ", i)
+})
+```
+
 example code [here](test-promise.js)
 
 ## Async Await
