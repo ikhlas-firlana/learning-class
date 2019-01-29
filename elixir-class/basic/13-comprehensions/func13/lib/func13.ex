@@ -64,6 +64,5 @@ defmodule Func13 do
     for {k, v} <- [one: 1, two: 2, three: 3], into: %{}, do: {k, v}
     Logger.info "#{k}"
   end
-
   
 end
