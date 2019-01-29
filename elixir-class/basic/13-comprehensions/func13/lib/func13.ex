@@ -2,7 +2,7 @@
 defmodule Func13 do
   
   import Integer
-  require Logger
+  import Logger
   @moduledoc """
   Documentation for Func13.
   """
@@ -56,13 +56,14 @@ defmodule Func13 do
     ## Examples 1
 
         iex> Func13.into
-        %{one: 1, three: 3, two: 2}
+        "Hello"
 
     """
   def into do
    
     for {k, v} <- [one: 1, two: 2, three: 3], into: %{}, do: {k, v}
-    Logger.info "#{k}"
+    for c <- [72, 101, 108, 108, 111], into: "", do: <<c>>
+    
   end
   
 end
