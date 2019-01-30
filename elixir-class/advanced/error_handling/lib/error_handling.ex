@@ -55,8 +55,10 @@ defmodule ErrorHandling do
       # {:ok, content} <- Poison.(file)
       # {:ok, %Pack{}} <- ErrorHandling.get_json("./package.json")
       {:ok, body} = File.read(filename)
-      {:ok, json} = Poison.decode(body)
-      Logger.info json[:name]    
+      {:ok, jsn} = Poison.decode(body, as: %Pack{})
+      # jsn.main
+      jsn.name
+      # json[:author]  
     rescue
       e in File.Error -> IO.puts("missing :source_file option")
     after
